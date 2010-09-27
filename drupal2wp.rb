@@ -25,7 +25,7 @@ Drupal::Node.posts.each do |drupal_post|
       :post_modified => rev_time,
       :post_modified_gmt => rev_time_utc,
       :post_title => sub_rev.title,
-      :post_content => base_rev.body
+      :post_content => sub_rev.body
     })
     post.update_attributes({
       :post_modified => rev_time,
