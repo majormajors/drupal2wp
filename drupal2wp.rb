@@ -49,5 +49,5 @@ Drupal::Node.posts.each do |drupal_post|
     
     post.comment_count += 1
     post.save
-  end unless drupal_post.comments.empty?
+  end
 end
